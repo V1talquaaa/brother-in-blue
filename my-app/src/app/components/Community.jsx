@@ -11,7 +11,7 @@ function Community() {
         <ul className="mt-[80px] grid grid-cols-3 gap-[24px] pl-[300px] pr-[17px]">
           <li className="px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">Lansing Correctional <br /> Facility</h2>
-            <Image src="/community1.png" width={344} height={143} />
+            <Image src="/community1.png" width={344} height={143} alt="img"/>
             <p className="mt-[24px] text-base">
               Lansing Correctional Facility (LCF) is the state’s largest and
               oldest correctional complex for adult male residents. At the close
@@ -22,7 +22,7 @@ function Community() {
           </li>
           <li className="px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">New Creation</h2>
-            <Image src="/community2.png" width={344} height={143} />
+            <Image src="/community2.png" width={344} height={143} alt="img"/>
             <p className="mt-[24px] text-base">
               In 2004, Pam Hanson suffered a sports injury, leaving her
               wheelchair-bound for over two years. Dependent on prescription
@@ -34,7 +34,7 @@ function Community() {
           </li>
           <li className="px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">Johnson County <br /> Department of Corrections</h2>
-            <Image src="/community3.png" width={344} height={143} />
+            <Image src="/community3.png" width={344} height={143} alt="img"/>
             <p className="mt-[24px] text-base">
               The Johnson County Department of Corrections Adult Residential
               Center supervises juvenile and adult offenders through effective
