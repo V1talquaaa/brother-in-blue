@@ -5,7 +5,7 @@ import Goal from "./components/Goal";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import History from "./components/History";
-import Mission from "./components/MIssion";
+import Mission from "./components/Mission";
 import Strategies from "./components/Strategies";
 
 export default function Home() {
