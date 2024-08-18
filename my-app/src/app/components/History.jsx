@@ -3,12 +3,12 @@ import React from 'react';
 
 function History() {
   return (
-    <section className='py-[120px]'>
+    <section id='history' className='lg:py-[120px]'>
         <div className='container py-[102px]'>
             <Image src='/headerLogo.png' width={371} height={89} alt='logo' className='mr-auto ml-auto' />
-            <h2 className='mt-[24px] text-center text-5xl text-mainBlack font-medium'>HISTORY</h2>
-            <ul className='mt-[80px] flex gap-[24px] justify-center'>
-                <li className='mt-[41px] flex flex-col items-center max-w-[282px]'>
+            <h2 className='mt-[24px] text-center text-[32px] lg:text-5xl text-mainBlack font-medium'>HISTORY</h2>
+            <ul className='mt-[48px] lg:mt-[80px] flex flex-col items-center lg:flex-row gap-[24px] justify-center'>
+                <li className='lg:mt-[41px] flex flex-col items-center max-w-[282px]'>
                     <Image src='/history1.png' width={282} height={283} alt='church' className='center'/>
                     <h3 className='mt-[32px] text-2xl text-center font-medium'>Church of the <br /> Resurrection</h3>
                     <p className='mt-[32px] text-center text-base'>Led and sometimes presented the Alpha Course from 2010 to 2020. Estimated total of all courses taught within that timeline was approximately 24-12 week sessions</p>

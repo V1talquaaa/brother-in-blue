@@ -5,14 +5,13 @@ import React from "react";
 function Goal() {
   return (
     <section className="pb-[24px] relative">
-      <div className="container border-b border-[#E8E8E8] pb-[24px]">
-        <Link
-          href="#"
-          className="mt-[103px] py-[16px] px-[24px] border rounded-[12px] border-mainBlue inline-block text-2xl font-medium text-mainBlue"
+      <div className="container lg:border-b border-[#E8E8E8] pb-[24px]">
+        <p
+          className="mt-[103px] py-[16px] px-[24px] border rounded-[12px] border-mainBlue inline-block text-base lg:text-2xl font-medium text-mainBlue"
         >
           GOAL
-        </Link>
-        <h2 className="text-right text-5xl font-medium ml-[195px] leading-relaxed">
+        </p>
+        <h2 className="mt-[24px] text-right text-2xl lg:text-5xl font-medium ml-[12px] lg:mt-0 lg:ml-[195px] lg:leading-relaxed">
           To introduce, maintain and expand the <span className="text-mainBlue">Kingdom of God</span> to those who are <br />
           amongst the marginalized, incarcerated and downtrodden
         </h2>

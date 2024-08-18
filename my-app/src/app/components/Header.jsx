@@ -4,18 +4,18 @@ import React from 'react';
 
 function Header() {
   return (
-<section className='pt-[24px] pb-[32px]'>
+<section id='home' className='hidden lg:block pt-[24px] pb-[32px]'>
 <div className='container flex items-center justify-between text-mainBlack'>
       <Link href="/">
       <Image src='/headerLogo.png' width={268} height={64} alt='logo'/>
       </Link>
       <ul className='flex items-center gap-[16px] text-lg'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Institutions</a></li>
-        <li><a href="#">Strategies</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#institutions">Institutions</a></li>
+        <li><a href="#strategies">Strategies</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#footer">Contacts</a></li>
       </ul>
       <div className='text-base'>
         <p className='mb-[12px]'>Have any questions?</p>

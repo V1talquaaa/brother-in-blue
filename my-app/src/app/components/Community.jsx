@@ -3,12 +3,12 @@ import React from "react";
 
 function Community() {
   return (
-    <section className="py-[120px] relative">
-        <Image src='/communityDoodeSvg.svg' width={319} height={318} alt="dodes" className="absolute left-0 top-[30%]"/>
+    <section id="institutions" className="py-[80px] lg:py-[120px] relative">
+        <Image src='/communityDoodeSvg.svg' width={319} height={318} alt="dodes" className="hidden lg:block absolute left-0 top-[30%]"/>
       <div className="container">
-        <h2 className="text-mainBlue text-5xl font-medium">Current Outreach in Our Community</h2>
+        <h2 className="text-mainBlue text-[32px] lg:text-5xl font-medium">Current Outreach in Our Community</h2>
         </div>
-        <ul className="mt-[80px] grid grid-cols-3 gap-[24px] pl-[300px] pr-[17px]">
+        <ul className="mt-[32px] lg:mt-[80px] mx-[16px] grid lg:grid-cols-3 gap-[24px] lg:pl-[300px] lg:pr-[17px]">
           <li className="px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">Lansing Correctional <br /> Facility</h2>
             <Image src="/community1.png" width={344} height={143} alt="img"/>
