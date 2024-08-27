@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import 'swiper/css';
@@ -8,26 +8,27 @@ import 'swiper/css/navigation';
 import { FreeMode, Navigation, Pagination } from 'swiper/modules';
 
 export default function CommunitySwiper() {
-
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
   return (
-    <div className="lg:ml-[300px] lg:mr-[30px] relative">
+    <div className="lg:ml-[300px] lg:mr-[30px]">
       <Swiper
-        slidesPerView={3}
         spaceBetween={24}
         freeMode={true}
         pagination={{ clickable: true }}
         navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
+          clickable: true
+        }}
         modules={[FreeMode, Pagination, Navigation]}
         className="mySwiper mt-[32px] lg:mt-[80px] mx-[16px] lg:pl-[300px] lg:pr-[17px]"
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 3,
+          },
+        }}
       >
         <SwiperSlide>
           <div className="card-container h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
@@ -81,16 +82,6 @@ export default function CommunitySwiper() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="absolute left-0 bottom-[-50px] flex space-x-2">
-        <button ref={prevRef} className="">
-          <Image src='/arrow-left.svg' width={30} height={30} alt='prev' />
-        </button>
-        <button ref={nextRef} className="">
-        <Image src='/arrow-right.svg' width={30} height={30} alt='next' />
-        </button>
-      </div>
     </div>
   );
 }
-
-
