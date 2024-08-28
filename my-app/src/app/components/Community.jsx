@@ -21,7 +21,9 @@ function Community() {
           Current Outreach in Our Community
         </h2>
       </div>
+      <div className="container">
       <CommunitySwiper />
+      </div>
       <Image
         src="/communityCircleSvg.svg"
         width={325}
