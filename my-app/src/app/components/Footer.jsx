@@ -30,9 +30,6 @@ function Footer() {
             <li>
               <a href="#events">Events</a>
             </li>
-            <li>
-              <a href="#footer">Contacts</a>
-            </li>
           </ul>
           <div className="mt-[48px] lg:mt-0 text-base">
             <p className="mb-[12px] text-center lg:text-left">Have any questions?</p>

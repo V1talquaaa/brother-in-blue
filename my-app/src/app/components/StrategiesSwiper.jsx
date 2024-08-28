@@ -10,18 +10,15 @@ export default function StrategiesSwiper() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // This will only run on the client side
+
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    // Set initial value
     handleResize();
 
-    // Add event listener
     window.addEventListener('resize', handleResize);
 
-    // Clean up the event listener on component unmount
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 

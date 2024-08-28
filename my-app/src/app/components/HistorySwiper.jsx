@@ -19,8 +19,8 @@ export default function HistorySwiper() {
       setIsMobile(isMobileView);
     };
 
-    handleResize(); // Check on mount
-    window.addEventListener('resize', handleResize); // Check on resize
+    handleResize(); 
+    window.addEventListener('resize', handleResize); 
 
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -37,19 +37,19 @@ export default function HistorySwiper() {
     <div className="">
       <Swiper
         spaceBetween={24}
-        freeMode={!isMobile} // Disable freeMode on mobile
-        navigation={!isMobile ? { clickable: true } : false} // Disable navigation on mobile
-        pagination={isMobile ? { clickable: true } : false} // Show pagination on mobile only
+        freeMode={!isMobile}
+        navigation={!isMobile ? { clickable: true } : false} 
+        pagination={isMobile ? { clickable: true } : false}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         modules={[FreeMode, Pagination, Navigation]}
         className="mySwiper mt-[32px] lg:mt-[80px] mx-[16px] lg:pl-[300px] lg:pr-[17px]"
         breakpoints={{
           640: {
-            slidesPerView: 1, // Show only one slide on mobile
-            spaceBetween: 0, // Adjust space between slides on mobile
+            slidesPerView: 1, 
+            spaceBetween: 0, 
           },
           768: {
-            slidesPerView: 3, // Show 3 slides on larger screens
+            slidesPerView: 3, 
             spaceBetween: 24,
           },
         }}
@@ -132,8 +132,8 @@ export default function HistorySwiper() {
                 !isMobile && isMiddleSlide(index) ? 'scale-[1.3]' : 'scale-[1]'
               }`}
               style={{
-                maxWidth: !isMobile ? '282px' : '100%', // Full width on mobile, max width on desktop
-                width: !isMobile ? 'auto' : '100%', // Ensure full width on mobile
+                maxWidth: !isMobile ? '282px' : '100%', 
+                width: !isMobile ? 'auto' : '100%', 
                 transformOrigin: 'center',
                 padding: !isMobile && isMiddleSlide(index) ? '8px' : '0',
               }}

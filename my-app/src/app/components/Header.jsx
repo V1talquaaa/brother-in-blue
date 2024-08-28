@@ -10,7 +10,7 @@ function Header() {
       <Image src='/headerLogo.png' width={268} height={64} alt='logo'/>
       </Link>
       <ul className='flex items-center gap-[16px] text-lg'>
-        <li><a href="#home">Home</a></li>
+        {/* <li><a href="#home">Home</a></li> */}
         <li><a href="#institutions">Institutions</a></li>
         <li><a href="#strategies">Strategies</a></li>
         <li><a href="#history">History</a></li>
