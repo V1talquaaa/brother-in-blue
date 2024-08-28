@@ -9,7 +9,6 @@ import { FreeMode, Navigation, Pagination } from 'swiper/modules';
 
 export default function CommunitySwiper() {
   return (
-    <div className="lg:ml-[300px] lg:mr-[30px]">
       <Swiper
         spaceBetween={24}
         freeMode={true}
@@ -18,20 +17,28 @@ export default function CommunitySwiper() {
           clickable: true
         }}
         modules={[FreeMode, Pagination, Navigation]}
-        className="mySwiper mt-[32px] lg:mt-[80px] mx-[16px] lg:pl-[300px] lg:pr-[17px]"
+        className="mySwiper container mt-[32px] lg:mt-[80px] mx-[16px] lg:pr-[17px]"
         breakpoints={{
           // when window width is >= 640px
-          640: {
+          320: {
             slidesPerView: 1,
+            pagination: {
+              clickable: true,
+            },
+            navigation: false, // Disable navigation on mobile
           },
           // when window width is >= 768px
           768: {
             slidesPerView: 3,
+            pagination: false, // Disable pagination on desktop
+            navigation: {
+              clickable: true,
+            },
           },
         }}
       >
         <SwiperSlide>
-          <div className="card-container h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
+<div className="h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">
               Lansing Correctional <br /> Facility
             </h2>
@@ -42,7 +49,7 @@ export default function CommunitySwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-container h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
+          <div className="h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">New Creation</h2>
             <Image src="/community2.png" width={344} height={143} alt="img" />
             <p className="mt-[24px] text-base">
@@ -51,7 +58,7 @@ export default function CommunitySwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-container h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
+          <div className="h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">
               Johnson County <br /> Department of Corrections
             </h2>
@@ -62,7 +69,7 @@ export default function CommunitySwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-container h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
+          <div className="h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">
               Transition Center of <br /> Kansas City
             </h2>
@@ -73,7 +80,7 @@ export default function CommunitySwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card-container h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
+          <div className="h-[550px] flex flex-col justify-between px-[24px] pt-[24px] pb-[50px] rounded-2xl bg-[#E5EDF4]">
             <h2 className="mb-[24px] text-2xl font-medium">Healing House</h2>
             <Image src="/community5.png" width={344} height={143} alt="img" />
             <p className="mt-[24px] text-base">
@@ -82,6 +89,5 @@ export default function CommunitySwiper() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </div>
   );
 }

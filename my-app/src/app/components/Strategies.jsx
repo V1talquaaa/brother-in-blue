@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import StrategiesSwiper from "./StrategiesSwiper";
 
 function Strategies() {
   return (
@@ -37,22 +38,7 @@ function Strategies() {
             className="hidden lg:block lg:col-span-1"
           />
           <div className="col-span-2">
-            <h4 className="text-2xl lg:text-[32px] text-mainBlack font-medium text-center lg:text-left">
-              Honor the God-given dignity in all people, no matter what their
-              circumstance
-            </h4>
-            <p className="mt-[24px] text-base lg:text-2xl text-mainBlack text-center lg:text-left">
-              Recognizing that everyone bears the image of God, we
-              unconditionally respect, love and accept all people. We endeavor
-              to teach to the gospel, believing that God offers redemption and
-              renewed purpose to each person who are marginalized or
-              incarcerated.
-            </p>
-            <p className="text-sm lg:text-lg mt-[24px] ml-[24px] italic text-center lg:text-right">
-              “So God created mankind in his own image, in the image of God he
-              created them; male and female he created them”
-            </p>
-            <p className="text-center lg:text-right italic">(Genesis 1:27)</p>
+            <StrategiesSwiper />
           </div>
         </div>
         <Image
