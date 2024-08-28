@@ -3,7 +3,7 @@ import React from 'react'
 
 function Council() {
   return (
-    <section className='pb-[120px]'>
+    <section className='pb-[120px] mt-[80px]'>
         <div className='container'>
             <Image src='/headerLogo.png' width={428} height={77} alt='logo' className='mr-auto ml-auto'/>
             <h2 className='text-center text-[32px] lg:text-5xl font-medium'>BOARD OF DIRECTOR POSITIONS</h2>
