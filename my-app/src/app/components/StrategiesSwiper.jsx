@@ -30,7 +30,7 @@ export default function StrategiesSwiper() {
       className="mySwiper"
     >
       <SwiperSlide>
-        <div className="container">
+        <div className="container py-[40px] sm:h-[624px]">
           <h4 className="text-2xl lg:text-[32px] text-mainBlack font-medium text-center lg:text-left">
             Honor the God-given dignity in all people, no matter what their
             circumstance
@@ -50,7 +50,7 @@ export default function StrategiesSwiper() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="container">
+        <div className="container py-[40px] h-[624px] lg:h-[640px]">
           <h4 className="text-2xl lg:text-[32px] text-mainBlack font-medium text-center lg:text-left">
             Treasure God’s Word
           </h4>
@@ -70,7 +70,7 @@ export default function StrategiesSwiper() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="container">
+        <div className="container py-[40px] sm:h-[624px]">
           <h4 className="text-2xl lg:text-[32px] text-mainBlack font-medium text-center lg:text-left">
             Serve with Relentless Perseverance
           </h4>
@@ -93,7 +93,7 @@ export default function StrategiesSwiper() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="container">
+        <div className="container py-[40px] h-[624px]">
           <h4 className="text-2xl lg:text-[32px] text-mainBlack font-medium text-center lg:text-left">
             Fulfill our Mission with Excellence and Urgency
           </h4>
@@ -113,7 +113,7 @@ export default function StrategiesSwiper() {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="container">
+        <div className="container py-[40px] h-[624px]">
           <h4 className="text-2xl lg:text-[32px] text-mainBlack font-medium text-center lg:text-left">
             Pray Continually
           </h4>
