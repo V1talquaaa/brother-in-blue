@@ -29,7 +29,7 @@ export default function CommunitySwiper() {
   return (
     <Swiper
       spaceBetween={24}
-      freeMode={true}
+      freeMode={!isMobile}
       pagination={isMobile ? { clickable: true } : false}
       navigation={!isMobile ? { clickable: true } : false}
       modules={[FreeMode, Pagination, Navigation]}
