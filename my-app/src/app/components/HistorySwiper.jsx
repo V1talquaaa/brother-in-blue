@@ -128,7 +128,7 @@ export default function HistorySwiper() {
         ].map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`container history-slide lg:h-[700px] flex flex-col items-center justify-center text-center transition-transform duration-300 ${
+              className={`container history-slide h-[700px] flex flex-col items-center justify-center text-center transition-transform duration-300 ${
                 !isMobile && isMiddleSlide(index) ? 'scale-[1.3]' : 'scale-[1]'
               }`}
               style={{
