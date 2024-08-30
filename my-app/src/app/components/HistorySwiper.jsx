@@ -92,7 +92,7 @@ export default function HistorySwiper() {
           },
           {
             image: '/history6.png',
-            title: 'New Creations (not-for-profit)',
+            title: 'New Creations',
             description:
               'Currently leading Alpha Course in this faith-based facility that helps overcome substance abuse addictions',
             location: 'Olathe, KS',
@@ -113,9 +113,9 @@ export default function HistorySwiper() {
           },
           {
             image: '/history9.png',
-            title: 'Healing House (not-for-profit)',
+            title: 'Healing House',
             description:
-              'Currently leading the Alpha Course in Cell Block B since 2022. Hosted and presented during Holy Spirit Retreat weekend on several occasions.',
+              'Currently leading the Alpha Course in Cell Block B since 2022.  Hosted and presented during Holy Spirit Retreat weekend on several occasions. Leading the AA 12-Step Program, the Alpha Course, and other recovery programs (since 2012) Independence, MO',
             location: 'Lansing, KS',
           },
           {

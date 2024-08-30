@@ -1,28 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { FreeMode, Navigation, Pagination } from 'swiper/modules';
+import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { FreeMode, Navigation, Pagination } from "swiper/modules";
 
 export default function CommunitySwiper() {
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         setIsMobile(window.innerWidth < 768);
       }
     };
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -43,7 +42,11 @@ export default function CommunitySwiper() {
           </h2>
           <Image src="/community1.png" width={344} height={143} alt="img" />
           <p className="mt-[24px] text-base">
-            Lansing Correctional Facility (LCF) is the state’s largest and oldest correctional complex for adult male residents. At the close of 2013, LCF had a capacity of 2,405. The complex consists of the Central Unit, which includes an 11-acre maximum-security facility, and a 46-acre medium-security facility.
+            Lansing Correctional Facility (LCF) is the state’s largest and
+            oldest correctional complex for adult male residents. At the close
+            of 2013, LCF had a capacity of 2,405. The complex consists of the
+            Central Unit, which includes an 11-acre maximum-security facility,
+            and a 46-acre medium-security facility.
           </p>
         </div>
       </SwiperSlide>
@@ -52,7 +55,12 @@ export default function CommunitySwiper() {
           <h2 className="mb-[24px] text-2xl font-medium">New Creation</h2>
           <Image src="/community2.png" width={344} height={143} alt="img" />
           <p className="mt-[24px] text-base">
-            In 2004, Pam Hanson suffered a sports injury, leaving her wheelchair-bound for over two years. Dependent on prescription pain medication for 12 years, she faced a tough withdrawal. New Creation has since expanded to include nine properties: six housing locations, an apartment building, Pam’s house, and the New Creation Community Center.
+            In 2004, Pam Hanson suffered a sports injury, leaving her
+            wheelchair-bound for over two years. Dependent on prescription pain
+            medication for 12 years, she faced a tough withdrawal. New Creation
+            has since expanded to include nine properties: six housing
+            locations, an apartment building, Pam’s house, and the New Creation
+            Community Center.
           </p>
         </div>
       </SwiperSlide>
@@ -63,7 +71,10 @@ export default function CommunitySwiper() {
           </h2>
           <Image src="/community3.png" width={344} height={143} alt="img" />
           <p className="mt-[24px] text-base">
-            The Johnson County Department of Corrections Adult Residential Center supervises juvenile and adult offenders through effective rehabilitation and recidivism reduction programs. They forge partnerships to bridge the gap between offenders and the community.
+            The Johnson County Department of Corrections Adult Residential
+            Center supervises juvenile and adult offenders through effective
+            rehabilitation and recidivism reduction programs. They forge
+            partnerships to bridge the gap between offenders and the community.
           </p>
         </div>
       </SwiperSlide>
@@ -74,7 +85,11 @@ export default function CommunitySwiper() {
           </h2>
           <Image src="/community4.png" width={344} height={143} alt="img" />
           <p className="mt-[24px] text-base">
-            The Transition Center of Kansas City (TCKC), located in the Historic West Bottoms, is a newly remodeled transitional living facility. Once a minimum-security prison, it has been transformed into a resource hub for justice-involved individuals. TCKC helps develop and strengthen support networks for a successful reentry journey.
+            The Transition Center of Kansas City (TCKC), located in the Historic
+            West Bottoms, is a newly remodeled transitional living facility.
+            Once a minimum-security prison, it has been transformed into a
+            resource hub for justice-involved individuals. TCKC helps develop
+            and strengthen support networks for a successful reentry journey.
           </p>
         </div>
       </SwiperSlide>
@@ -83,7 +98,11 @@ export default function CommunitySwiper() {
           <h2 className="mb-[24px] text-2xl font-medium">Healing House</h2>
           <Image src="/community5.png" width={344} height={143} alt="img" />
           <p className="mt-[24px] text-base">
-            The Transition Center of Kansas City (TCKC), located in the Historic West Bottoms, is a newly remodeled transitional living facility. Once a minimum-security prison, it has been transformed into a resource hub for justice-involved individuals. TCKC helps develop and strengthen support networks for a successful reentry journey.
+            Healing House provides outpa1ent treatment and recovery support
+            services for individuals who suffer from substance use disorders.
+            These services include group therapy, counseling, classes, and
+            recovery coaching. Services are provided by professional substance
+            abuse counselors and cer1fied peer support specialists.
           </p>
         </div>
       </SwiperSlide>
