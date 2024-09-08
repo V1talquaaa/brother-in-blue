@@ -101,8 +101,8 @@ export default function HistorySwiper() {
             image: '/history7.png',
             title: 'Transition Center of Kansas City',
             description:
-              'Currently leading men in the center on a Christian walk. Tools included, but not limited to, watching The Chosen, teaching the Alpha Course and other general presentations and videos',
-            location: 'Bottoms, MO',
+              'Currently leading men in the center on a Christian walk.  Tools included, but not limited to,  watching The Chosen, teaching the Alpha Course and other general presentations and videos',
+            location: 'West Bottoms, MO',
           },
           {
             image: '/history8.png',
@@ -115,8 +115,8 @@ export default function HistorySwiper() {
             image: '/history9.png',
             title: 'Healing House',
             description:
-              'Currently leading the Alpha Course in Cell Block B since 2022.  Hosted and presented during Holy Spirit Retreat weekend on several occasions. Leading the AA 12-Step Program, the Alpha Course, and other recovery programs (since 2012) Independence, MO',
-            location: 'Lansing, KS',
+              'Leading the AA 12 - step Program, the Alpha Course, and other recovery programs (since 2012).',
+            location: 'Independence, MO',
           },
           {
             image: '/history10.png',
